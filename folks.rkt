@@ -8,22 +8,19 @@
 (define exceptions (list "possum"
                          "gemini"))
 
-(define program-name "folks")
-
 (define command-stdout "-stdout")
 (define command-out "-o")
 (define command-help-short "-h")
 (define command-help-human "help")
 (define command-help-long "--help")
 
+(define program-name "folks")
+
 (define indent "      ")
 (define bullet-format "<li><a href=\"https://trash.town/~~~a/\">~a</a></li>")
 
-(define header-title "folks")
-
 (define header
-  (format
-    #<<string-block
+  #<<string-block
 <html>
   <head>
     <meta charset="utf-8">
@@ -43,17 +40,17 @@
     </div>
     <nav style="clear:both">
       <a href="/">home</a> <>
+      <a href="/folks.html">folks</a> <>
       <a href="/news.html">news</a> <>
       <a href="/signup.html">signup</a> <>
       <a href="/wiki/">wiki</a> <>
       <a href="/contact.html">contact</a> <>
       <a href="/donate.html">donate</a>
     </nav>
-    <h2>~a</h2>
+    <h2>folks</h2>
     <ul>
 string-block
-header-title
-))
+)
 
 (define footer
   #<<string-block
